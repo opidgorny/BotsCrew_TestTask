@@ -4,24 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/opidgorny/bot/entity/Degree.java" line="22" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e85a536-3652-46fb-9db2-c1fd87abb6d7" name="Default" comment="06.03 - added simple validation for input message">
+    <list default="true" id="9e85a536-3652-46fb-9db2-c1fd87abb6d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opidgorny/bot/SimpleBot.java" afterPath="$PROJECT_DIR$/src/main/java/com/opidgorny/bot/SimpleBot.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opidgorny/bot/service/impl/DepartmentServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/opidgorny/bot/service/impl/DepartmentServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/App.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/App.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/BotFrame.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/BotFrame.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/SimpleBot$1.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/SimpleBot$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/SimpleBot.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/SimpleBot.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/entity/Degree.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/entity/Degree.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/entity/Department.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/entity/Department.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/entity/Lector.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/entity/Lector.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/repository/DepartmentRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/repository/DepartmentRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/repository/LectorRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/repository/LectorRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/service/DepartmentService.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/service/DepartmentService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/service/LectorService.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/service/LectorService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/service/impl/DepartmentServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/service/impl/DepartmentServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/service/impl/LectorServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/opidgorny/bot/service/impl/LectorServiceImpl.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -682,12 +666,20 @@
       <workItem from="1520097107685" duration="33462000" />
       <workItem from="1520150791904" duration="5077000" />
       <workItem from="1520173933543" duration="15586000" />
-      <workItem from="1520319357525" duration="2586000" />
+      <workItem from="1520319357525" duration="2614000" />
     </task>
+    <task id="LOCAL-00001" summary="06.03 - added simple validation for input message">
+      <created>1520321967893</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520321967893</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96487000" />
+    <option name="totallyTimeSpent" value="96515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
