@@ -69,9 +69,11 @@ public class DepartmentServiceImpl implements DepartmentService{
 
         List<Department> departments = departmentRepository.findDepartmentByDepartmentNameContaining(name);
         String result = "Departments: ";
+
         for(Department department : departments) {
             result += String.format("[name='%s']%n", department.getDepartmentName());
         }
+
         return result;
     }
 

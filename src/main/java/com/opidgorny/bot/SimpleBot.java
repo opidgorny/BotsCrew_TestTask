@@ -39,30 +39,29 @@ public class SimpleBot {
             String message =
                     String.join(" ", msg.toLowerCase().split("[ {,|.}?]+"));
 
-            //Needs to be refactored. Change if clauses with enums, probably
+            //Needs to be refactored. Change if clauses with switch using enums, probably
+        System.out.println(message.split(" ").length);
+            if(message.split(" ").length >= 3) {
 
-            if(message.substring(0, message.lastIndexOf(" ")).equals(getKeysFromValue(KEY_SENTENCES, "department"))) {
+                if (message.substring(0, message.lastIndexOf(" ")).equals(getKeysFromValue(KEY_SENTENCES, "department"))) {
 
-                return departmentKey(message, KEY_SENTENCES);
+                    return departmentKey(message, KEY_SENTENCES);
+                } else if (message.equals(("Show " + message.substring(5, message.lastIndexOf(" ")) + " statistic").toLowerCase())) {
+
+                    return statisticKey(message, KEY_SENTENCES);
+                } else if (message.substring(0, message.lastIndexOf(" ")).equals(getKeysFromValue(KEY_SENTENCES, "salary"))) {
+
+                    return salaryKey(message, KEY_SENTENCES);
+                } else if (message.substring(0, message.lastIndexOf(" ")).equals(getKeysFromValue(KEY_SENTENCES, "employees"))) {
+
+                    return employeesKey(message, KEY_SENTENCES);
+                } else if (message.substring(0, message.lastIndexOf(" ")).equals(getKeysFromValue(KEY_SENTENCES, "globalSearch"))) {
+
+                    return globalSearchKey(message, KEY_SENTENCES);
+                }
             }
-            else if(message.equals(("Show " + message.substring(5, message.lastIndexOf(" ")) + " statistic").toLowerCase())) {
 
-                return statisticKey(message, KEY_SENTENCES);
-            }
-            else if(message.substring(0, message.lastIndexOf(" ")).equals(getKeysFromValue(KEY_SENTENCES, "salary"))) {
-
-                return salaryKey(message, KEY_SENTENCES);
-            }
-            else if(message.substring(0, message.lastIndexOf(" ")).equals(getKeysFromValue(KEY_SENTENCES, "employees"))) {
-
-                return employeesKey(message, KEY_SENTENCES);
-            }
-            else if(message.substring(0, message.lastIndexOf(" ")).equals(getKeysFromValue(KEY_SENTENCES, "globalSearch"))) {
-
-                return globalSearchKey(message, KEY_SENTENCES);
-            }
-
-            return null;
+            return "You are using wrong commands";
     }
 
     //Returns head of department by {department_name}
@@ -124,8 +123,10 @@ public class SimpleBot {
 
     private String globalSearch(String template) {
         //Global Search by Departments and Lectors
-        return departmentService.getDepartmentNameByNameContaining(getLastWord(template)) + "\n" +
-        lectorService.getLectorByFirstNameContainingOrLastNameContaining(template);
+        String globalDepartments = departmentService.getDepartmentNameByNameContaining(template) + "\n";
+        String globalLectors = lectorService.getLectorByFirstNameContainingOrLastNameContaining(template);
+
+        return globalDepartments + globalLectors;
 
     }
 
